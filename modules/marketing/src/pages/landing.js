@@ -142,7 +142,7 @@ const Landing = () => {
           color="textSecondary"
           component="p"
         >
-          My app footer description!
+          My app footer description
         </Typography>
         <Copyright />
       </footer>
