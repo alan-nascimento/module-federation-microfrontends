@@ -1,3 +1,8 @@
 import React from 'react';
+import MarketingApp from './apps/marketing';
 
-export default () => <h1>Hi there!</h1>;
+const App = () => {
+  return <MarketingApp />;
+};
+
+export default App;
