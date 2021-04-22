@@ -7,22 +7,12 @@ import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import MaterialLink from '@material-ui/core/Link';
 import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <MaterialLink component={Link} to="/" color="inherit">
-        Your Website
-      </MaterialLink>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
+import { Copyright } from '../components';
+
+const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 const useStyles = makeStyles((theme) => ({
   '@global': {
@@ -61,9 +51,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-export default function Album() {
+const Landing = () => {
   const classes = useStyles();
 
   return (
@@ -154,10 +142,12 @@ export default function Album() {
           color="textSecondary"
           component="p"
         >
-          Something here to give the footer a purpose!
+          My app footer description!
         </Typography>
         <Copyright />
       </footer>
     </>
   );
-}
+};
+
+export default Landing;
