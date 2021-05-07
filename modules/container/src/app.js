@@ -8,9 +8,9 @@ import {
 
 import { Header, Progress } from './components';
 
-const Auth = lazy(() => import('./apps/auth'));
-const Marketing = lazy(() => import('./apps/marketing'));
-const Dashboard = lazy(() => import('./apps/dashboard'));
+const Auth = lazy(() => import('./apps/auth-app'));
+const Marketing = lazy(() => import('./apps/marketing-app'));
+const Dashboard = lazy(() => import('./apps/dashboard-app'));
 
 const generateClassName = createGenerateClassName({
   productionPrefix: 'co',
