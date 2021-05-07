@@ -78,10 +78,6 @@ const SignIn = ({ onSignIn }) => {
             id="password"
             autoComplete="current-password"
           />
-          <FormControlLabel
-            control={<Checkbox value="remember" color="primary" />}
-            label="Remember me"
-          />
           <Button
             type="submit"
             fullWidth
@@ -94,14 +90,11 @@ const SignIn = ({ onSignIn }) => {
           </Button>
           <Grid container>
             <Grid item>
-              <Link to="/auth/signup">{"Don't have an account? Sign Up"}</Link>
+              <Link to="/auth/signup">Don't have an account? Sign Up</Link>
             </Grid>
           </Grid>
         </form>
       </div>
-      <Box mt={8}>
-        <Copyright />
-      </Box>
     </Container>
   );
 };
