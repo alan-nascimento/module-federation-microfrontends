@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createMemoryHistory, createBrowserHistory } from 'history';
 
-import App from './App';
+import App from './app';
 
 const mount = (el, { onSignIn, onNavigate, defaultHistory, initialPath }) => {
   const history =
